@@ -2,6 +2,7 @@ import LoadingProgressIndicatorGetStyleFunction from "../types/LoadingProgressIn
 
 const getDefaultStyle: LoadingProgressIndicatorGetStyleFunction = ({
   color,
+  direction,
   fadeAnimationDuration,
   growAnimationDuration,
   isVisible,
@@ -20,7 +21,9 @@ const getDefaultStyle: LoadingProgressIndicatorGetStyleFunction = ({
 
   transition: `opacity ${fadeAnimationDuration}ms, transform ${growAnimationDuration}ms`,
 
-  transform: `translate3d(${(1 - progress) * 100}%, 0, 0)`,
+  transform: `translate3d(${direction === "ltr" ? "-" : ""}${
+    (1 - progress) * 100
+  }%, 0, 0)`,
 });
 
 export default getDefaultStyle;

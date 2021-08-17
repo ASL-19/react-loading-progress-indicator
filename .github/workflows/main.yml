@@ -1,26 +1,20 @@
 on: push
 
 jobs:
-  lint-and-build:
+  build-check-and-lint:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Use Node.js 12.x
+    - name: Use Node.js 16.x
       uses: actions/setup-node@v1
       with:
-        node-version: 12.x
+        node-version: 16.x
 
     - name: Install dependencies
-      run: yarn
+      run: npm install
 
-    - name: Build
-      run: yarn build
-
-    - name: Run API Extractor check
-      run: yarn api-extractor:check
-
-    - name: Run ESLint
-      run: yarn eslint
+    - name: Build, check, and lint
+      run: npm run build-check-and-lint

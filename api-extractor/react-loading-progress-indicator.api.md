@@ -9,7 +9,6 @@ import { FC } from 'react';
 
 // @public
 const LoadingProgressIndicator: FC<LoadingProgressIndicatorProps>;
-
 export default LoadingProgressIndicator;
 
 // @public
@@ -17,6 +16,7 @@ export interface LoadingProgressIndicatorGetStyleFunction {
     // (undocumented)
     (attrs: {
         color: string;
+        direction: "ltr" | "rtl";
         fadeAnimationDuration: number;
         growAnimationDuration: number;
         isVisible: boolean;
@@ -27,6 +27,7 @@ export interface LoadingProgressIndicatorGetStyleFunction {
 // @public
 export interface LoadingProgressIndicatorProps {
     color: string;
+    direction?: "ltr" | "rtl";
     fadeAnimationDuration?: number;
     getStyle?: LoadingProgressIndicatorGetStyleFunction;
     growAnimationDuration?: number;
@@ -40,6 +41,5 @@ export interface LoadingProgressIndicatorProps {
     tickIncrement?: number;
     tickIncrementFirst?: number;
 }
-
 
 ```

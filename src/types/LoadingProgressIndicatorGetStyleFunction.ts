@@ -8,6 +8,8 @@ import { CSSProperties } from "react";
  *
  * - {@link LoadingProgressIndicatorProps.color | color}
  *
+ * - {@link LoadingProgressIndicatorProps.direction | direction}
+ *
  * - {@link LoadingProgressIndicatorProps.fadeAnimationDuration | fadeAnimationDuration}
  *
  * - {@link LoadingProgressIndicatorProps.growAnimationDuration | growAnimationDuration}
@@ -24,6 +26,7 @@ import { CSSProperties } from "react";
 interface LoadingProgressIndicatorGetStyleFunction {
   (attrs: {
     color: string;
+    direction: "ltr" | "rtl";
     fadeAnimationDuration: number;
     growAnimationDuration: number;
     isVisible: boolean;

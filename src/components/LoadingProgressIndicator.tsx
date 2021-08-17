@@ -10,6 +10,7 @@ import getDefaultStyle from "../utils/getDefaultStyle";
 
 const LoadingProgressIndicatorUnmemoized: FC<LoadingProgressIndicatorProps> = ({
   color,
+  direction = "ltr",
   fadeAnimationDuration = 300,
   getStyle,
   growAnimationDuration = 300,
@@ -101,6 +102,7 @@ const LoadingProgressIndicatorUnmemoized: FC<LoadingProgressIndicatorProps> = ({
 
   const style = getStyleFunction({
     color,
+    direction,
     fadeAnimationDuration,
     growAnimationDuration,
     isVisible,

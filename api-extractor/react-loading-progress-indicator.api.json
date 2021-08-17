@@ -1,9 +1,163 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.10.4",
-    "schemaVersion": 1003,
-    "oldestForwardsCompatibleVersion": 1001
+    "toolVersion": "7.18.5",
+    "schemaVersion": 1004,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      }
+    }
   },
   "kind": "Package",
   "canonicalReference": "@asl-19/react-loading-progress-indicator!",
@@ -53,7 +207,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorGetStyleFunction:interface",
-          "docComment": "/**\n * Function returning loading indicator styles.\n *\n * @remarks\n *\n * Called with attrs argument containing config and state values:\n *\n * - {@link LoadingProgressIndicatorProps.color | color}\n *\n * - {@link LoadingProgressIndicatorProps.fadeAnimationDuration | fadeAnimationDuration}\n *\n * - {@link LoadingProgressIndicatorProps.growAnimationDuration | growAnimationDuration}\n *\n * - isVisible (boolean)\n *\n * - progress (number 0 and 1)\n *\n * Function definition should be outside of render function or wrapped in useCallback to prevent unnecessary re-renders.\n *\n * @public\n */\n",
+          "docComment": "/**\n * Function returning loading indicator styles.\n *\n * @remarks\n *\n * Called with attrs argument containing config and state values:\n *\n * - {@link LoadingProgressIndicatorProps.color | color}\n *\n * - {@link LoadingProgressIndicatorProps.direction | direction}\n *\n * - {@link LoadingProgressIndicatorProps.fadeAnimationDuration | fadeAnimationDuration}\n *\n * - {@link LoadingProgressIndicatorProps.growAnimationDuration | growAnimationDuration}\n *\n * - isVisible (boolean)\n *\n * - progress (number 0 and 1)\n *\n * Function definition should be outside of render function or wrapped in useCallback to prevent unnecessary re-renders.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -74,7 +228,7 @@
                 },
                 {
                   "kind": "Content",
-                  "text": "{\n        color: string;\n        fadeAnimationDuration: number;\n        growAnimationDuration: number;\n        isVisible: boolean;\n        progress: number;\n    }"
+                  "text": "{\n        color: string;\n        direction: \"ltr\" | \"rtl\";\n        fadeAnimationDuration: number;\n        growAnimationDuration: number;\n        isVisible: boolean;\n        progress: number;\n    }"
                 },
                 {
                   "kind": "Content",
@@ -140,8 +294,35 @@
                   "text": ";"
                 }
               ],
+              "isOptional": false,
               "releaseTag": "Public",
               "name": "color",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps#direction:member",
+              "docComment": "/**\n * Direction of loading indicator (default: \"ltr\").\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "direction?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"ltr\" | \"rtl\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "direction",
               "propertyTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
@@ -165,6 +346,7 @@
                   "text": ";"
                 }
               ],
+              "isOptional": true,
               "releaseTag": "Public",
               "name": "fadeAnimationDuration",
               "propertyTypeTokenRange": {
@@ -175,7 +357,7 @@
             {
               "kind": "PropertySignature",
               "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps#getStyle:member",
-              "docComment": "/**\n * Function returning loading indicator styles.\n *\n * @remarks\n *\n * Called with attrs argument containing config and state values:\n *\n * - {@link LoadingProgressIndicatorProps.color | color}\n *\n * - {@link LoadingProgressIndicatorProps.fadeAnimationDuration | fadeAnimationDuration}\n *\n * - {@link LoadingProgressIndicatorProps.growAnimationDuration | growAnimationDuration}\n *\n * - isVisible (boolean)\n *\n * - progress (number 0 and 1)\n *\n * Function definition should be outside of render function or wrapped in useCallback to prevent unnecessary re-renders.\n */\n",
+              "docComment": "/**\n * Function returning loading indicator styles.\n *\n * @remarks\n *\n * Called with attrs argument containing config and state values:\n *\n * - {@link LoadingProgressIndicatorProps.color | color}\n *\n * - {@link LoadingProgressIndicatorProps.direction | direction}\n *\n * - {@link LoadingProgressIndicatorProps.fadeAnimationDuration | fadeAnimationDuration}\n *\n * - {@link LoadingProgressIndicatorProps.growAnimationDuration | growAnimationDuration}\n *\n * - isVisible (boolean)\n *\n * - progress (number 0 and 1)\n *\n * Function definition should be outside of render function or wrapped in useCallback to prevent unnecessary re-renders.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -191,6 +373,7 @@
                   "text": ";"
                 }
               ],
+              "isOptional": true,
               "releaseTag": "Public",
               "name": "getStyle",
               "propertyTypeTokenRange": {
@@ -216,6 +399,7 @@
                   "text": ";"
                 }
               ],
+              "isOptional": true,
               "releaseTag": "Public",
               "name": "growAnimationDuration",
               "propertyTypeTokenRange": {
@@ -241,6 +425,7 @@
                   "text": ";"
                 }
               ],
+              "isOptional": false,
               "releaseTag": "Public",
               "name": "isLoading",
               "propertyTypeTokenRange": {
@@ -266,6 +451,7 @@
                   "text": ";"
                 }
               ],
+              "isOptional": false,
               "releaseTag": "Public",
               "name": "key",
               "propertyTypeTokenRange": {
@@ -291,6 +477,7 @@
                   "text": ";"
                 }
               ],
+              "isOptional": false,
               "releaseTag": "Public",
               "name": "label",
               "propertyTypeTokenRange": {
@@ -316,6 +503,7 @@
                   "text": ";"
                 }
               ],
+              "isOptional": true,
               "releaseTag": "Public",
               "name": "shouldBeVisibleBeforeFirstTick",
               "propertyTypeTokenRange": {
@@ -341,6 +529,7 @@
                   "text": ";"
                 }
               ],
+              "isOptional": true,
               "releaseTag": "Public",
               "name": "shouldFocusOnFirstTick",
               "propertyTypeTokenRange": {
@@ -366,6 +555,7 @@
                   "text": ";"
                 }
               ],
+              "isOptional": true,
               "releaseTag": "Public",
               "name": "tickDuration",
               "propertyTypeTokenRange": {
@@ -391,6 +581,7 @@
                   "text": ";"
                 }
               ],
+              "isOptional": true,
               "releaseTag": "Public",
               "name": "tickDurationFirst",
               "propertyTypeTokenRange": {
@@ -416,6 +607,7 @@
                   "text": ";"
                 }
               ],
+              "isOptional": true,
               "releaseTag": "Public",
               "name": "tickIncrement",
               "propertyTypeTokenRange": {
@@ -441,6 +633,7 @@
                   "text": ";"
                 }
               ],
+              "isOptional": true,
               "releaseTag": "Public",
               "name": "tickIncrementFirst",
               "propertyTypeTokenRange": {
