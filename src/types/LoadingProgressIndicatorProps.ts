@@ -11,6 +11,12 @@ interface LoadingProgressIndicatorProps {
    */
   color: string;
 
+
+  /**
+   * Direction of loading indicator (default: "ltr").
+   */
+  direction?: "ltr" | "rtl";
+
   /**
    * Duration of fade in/out animation in ms (default: 300).
    */

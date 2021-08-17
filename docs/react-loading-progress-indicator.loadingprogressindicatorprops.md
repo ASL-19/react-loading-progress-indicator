@@ -17,6 +17,7 @@ interface LoadingProgressIndicatorProps
 |  Property | Type | Description |
 |  --- | --- | --- |
 |  [color](./react-loading-progress-indicator.loadingprogressindicatorprops.color.md) | string | CSS color of loading indicator (has no effect if getStyle prop set). |
+|  [direction?](./react-loading-progress-indicator.loadingprogressindicatorprops.direction.md) | "ltr" \| "rtl" | <i>(Optional)</i> Direction of loading indicator (default: "ltr"). |
 |  [fadeAnimationDuration?](./react-loading-progress-indicator.loadingprogressindicatorprops.fadeanimationduration.md) | number | <i>(Optional)</i> Duration of fade in/out animation in ms (default: 300). |
 |  [getStyle?](./react-loading-progress-indicator.loadingprogressindicatorprops.getstyle.md) | LoadingProgressIndicatorGetStyleFunction | <i>(Optional)</i> Function returning loading indicator styles. |
 |  [growAnimationDuration?](./react-loading-progress-indicator.loadingprogressindicatorprops.growanimationduration.md) | number | <i>(Optional)</i> Duration of indicator grow animation in ms (default: 300). |
