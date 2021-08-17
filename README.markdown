@@ -16,12 +16,12 @@ See [`docs/react-loading-progress-indicator.md`](./docs/react-loading-progress-i
 ## How to install
 
 ```sh
-yarn add @asl-19/react-loading-progress-indicator
+npm install @asl-19/react-loading-progress-indicator
 ```
 
 ## Compatibility
 
-This package is developed and used with Node.js 12 (the active LTS [release](https://nodejs.org/en/about/releases/) as of 2020-06). The code should be forward-compatible, but use with newer Node.js versions is untested and unsupported.
+This package is developed and used with Node.js 16. The code should be forward-compatible, but use with other Node.js versions is untested and unsupported.
 
 ## Limitations
 
