@@ -27,11 +27,12 @@
     "build-esm": "tsc --project tsconfig-esm.json",
     "build-check-and-lint": "npm-run-all -l -s build -p api-extractor:check eslint",
     "prepublishOnly": "npm run build",
-    "clean-dist": "rm -rf ./dist/",
+    "clean-dist": "rm -rf dist/*",
     "eslint": "eslint . --ext js,ts"
   },
   "dependencies": {
-    "@asl-19/js-dom-utils": "^0.1.3"
+    "@asl-19/js-dom-utils": "^0.1.3",
+    "@asl-19/shared-package-configs": "^0.1.1"
   },
   "devDependencies": {
     "@asl-19/eslint-config": "^0.4.0",
