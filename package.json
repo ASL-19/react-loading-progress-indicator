@@ -24,12 +24,9 @@
     "build": "npm-run-all -l -s clean-dist -p build-cjs build-esm",
     "build-and-update-api": "npm-run-all -l -s build api-extractor:update api-documenter:update",
     "build-cjs": "tsc --project tsconfig-cjs.json",
-    "build-cjs-no-emit": "tsc --noEmit --project tsconfig-cjs.json",
     "build-esm": "tsc --project tsconfig-esm.json",
-    "build-esm-no-emit": "tsc --noEmit --project tsconfig-esm.json",
     "build-check-and-lint": "npm-run-all -l -s build -p api-extractor:check eslint",
     "prepublishOnly": "npm run build",
-    "build-no-emit": "npm-run-all -l -p build-cjs-no-emit build-esm-no-emit",
     "clean-dist": "rm -rf ./dist/",
     "eslint": "eslint . --ext js,ts"
   },
