@@ -25,6 +25,8 @@ export default LoadingProgressIndicator;
  *
  * - {@link LoadingProgressIndicatorProps.color | color}
  *
+ * - {@link LoadingProgressIndicatorProps.direction | direction}
+ *
  * - {@link LoadingProgressIndicatorProps.fadeAnimationDuration | fadeAnimationDuration}
  *
  * - {@link LoadingProgressIndicatorProps.growAnimationDuration | growAnimationDuration}
@@ -41,6 +43,7 @@ export default LoadingProgressIndicator;
 export declare interface LoadingProgressIndicatorGetStyleFunction {
     (attrs: {
         color: string;
+        direction: "ltr" | "rtl";
         fadeAnimationDuration: number;
         growAnimationDuration: number;
         isVisible: boolean;
@@ -58,6 +61,10 @@ export declare interface LoadingProgressIndicatorProps {
      * CSS color of loading indicator (has no effect if getStyle prop set).
      */
     color: string;
+    /**
+     * Direction of loading indicator (default: "ltr").
+     */
+    direction?: "ltr" | "rtl";
     /**
      * Duration of fade in/out animation in ms (default: 300).
      */

@@ -207,7 +207,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorGetStyleFunction:interface",
-          "docComment": "/**\n * Function returning loading indicator styles.\n *\n * @remarks\n *\n * Called with attrs argument containing config and state values:\n *\n * - {@link LoadingProgressIndicatorProps.color | color}\n *\n * - {@link LoadingProgressIndicatorProps.fadeAnimationDuration | fadeAnimationDuration}\n *\n * - {@link LoadingProgressIndicatorProps.growAnimationDuration | growAnimationDuration}\n *\n * - isVisible (boolean)\n *\n * - progress (number 0 and 1)\n *\n * Function definition should be outside of render function or wrapped in useCallback to prevent unnecessary re-renders.\n *\n * @public\n */\n",
+          "docComment": "/**\n * Function returning loading indicator styles.\n *\n * @remarks\n *\n * Called with attrs argument containing config and state values:\n *\n * - {@link LoadingProgressIndicatorProps.color | color}\n *\n * - {@link LoadingProgressIndicatorProps.direction | direction}\n *\n * - {@link LoadingProgressIndicatorProps.fadeAnimationDuration | fadeAnimationDuration}\n *\n * - {@link LoadingProgressIndicatorProps.growAnimationDuration | growAnimationDuration}\n *\n * - isVisible (boolean)\n *\n * - progress (number 0 and 1)\n *\n * Function definition should be outside of render function or wrapped in useCallback to prevent unnecessary re-renders.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -228,7 +228,7 @@
                 },
                 {
                   "kind": "Content",
-                  "text": "{\n        color: string;\n        fadeAnimationDuration: number;\n        growAnimationDuration: number;\n        isVisible: boolean;\n        progress: number;\n    }"
+                  "text": "{\n        color: string;\n        direction: \"ltr\" | \"rtl\";\n        fadeAnimationDuration: number;\n        growAnimationDuration: number;\n        isVisible: boolean;\n        progress: number;\n    }"
                 },
                 {
                   "kind": "Content",
@@ -304,6 +304,32 @@
             },
             {
               "kind": "PropertySignature",
+              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps#direction:member",
+              "docComment": "/**\n * Direction of loading indicator (default: \"ltr\").\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "direction?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"ltr\" | \"rtl\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "direction",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
               "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps#fadeAnimationDuration:member",
               "docComment": "/**\n * Duration of fade in/out animation in ms (default: 300).\n */\n",
               "excerptTokens": [
@@ -331,7 +357,7 @@
             {
               "kind": "PropertySignature",
               "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps#getStyle:member",
-              "docComment": "/**\n * Function returning loading indicator styles.\n *\n * @remarks\n *\n * Called with attrs argument containing config and state values:\n *\n * - {@link LoadingProgressIndicatorProps.color | color}\n *\n * - {@link LoadingProgressIndicatorProps.fadeAnimationDuration | fadeAnimationDuration}\n *\n * - {@link LoadingProgressIndicatorProps.growAnimationDuration | growAnimationDuration}\n *\n * - isVisible (boolean)\n *\n * - progress (number 0 and 1)\n *\n * Function definition should be outside of render function or wrapped in useCallback to prevent unnecessary re-renders.\n */\n",
+              "docComment": "/**\n * Function returning loading indicator styles.\n *\n * @remarks\n *\n * Called with attrs argument containing config and state values:\n *\n * - {@link LoadingProgressIndicatorProps.color | color}\n *\n * - {@link LoadingProgressIndicatorProps.direction | direction}\n *\n * - {@link LoadingProgressIndicatorProps.fadeAnimationDuration | fadeAnimationDuration}\n *\n * - {@link LoadingProgressIndicatorProps.growAnimationDuration | growAnimationDuration}\n *\n * - isVisible (boolean)\n *\n * - progress (number 0 and 1)\n *\n * Function definition should be outside of render function or wrapped in useCallback to prevent unnecessary re-renders.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",

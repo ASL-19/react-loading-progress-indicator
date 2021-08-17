@@ -18,6 +18,8 @@ Called with attrs argument containing config and state values:
 
 - [color](./react-loading-progress-indicator.loadingprogressindicatorprops.color.md)
 
+- [direction](./react-loading-progress-indicator.loadingprogressindicatorprops.direction.md)
+
 - [fadeAnimationDuration](./react-loading-progress-indicator.loadingprogressindicatorprops.fadeanimationduration.md)
 
 - [growAnimationDuration](./react-loading-progress-indicator.loadingprogressindicatorprops.growanimationduration.md)
