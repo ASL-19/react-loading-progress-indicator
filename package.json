@@ -9,9 +9,6 @@
   },
   "license": "GPL-3.0-or-later",
   "repository": "ASL-19/react-loading-progress-indicator",
-  "engines": {
-    "node": ">= 12"
-  },
   "files": [
     "dist/**/*.js*",
     "types/**/*.d.ts"
