@@ -1,7 +1,7 @@
 on: push
 
 jobs:
-  lint-and-build:
+  lint-and-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,11 +16,5 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Build
-      run: npm run build
-
-    - name: Run API Extractor check
-      run: npm run api-extractor:check
-
-    - name: Run ESLint
-      run: npm run eslint
+    - name: Lint and test
+      run: lint-and-test
