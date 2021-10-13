@@ -15,7 +15,7 @@
   ],
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "types/react-loading-progress-indicator.public.d.ts",
+  "types": "types/react-loading-progress-indicator.d.ts",
   "sideEffects": false,
   "scripts": {
     "api-extractor:check": "api-extractor run --verbose",
