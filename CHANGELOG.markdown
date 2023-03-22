@@ -1,5 +1,12 @@
 # @asl-19/react-loading-progress-indicator changelog
 
+## 0.3.0 [2023-03-22]
+
+### Changes
+
+- Replaced `shouldFocusOnFirstTick` prop with ARIA announcement when loading indicator becomes visible
+- Updated dependencies and linting setup
+
 ## [0.2.1](https://github.com/ASL-19/react-loading-progress-indicator/pulls?q=is%3Apr+milestone%3A0.2.1+is%3Aclosed) [2021-10-13]
 
 ### Fixes
