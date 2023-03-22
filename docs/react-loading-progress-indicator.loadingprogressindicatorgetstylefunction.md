@@ -6,7 +6,7 @@
 
 Function returning loading indicator styles.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 interface LoadingProgressIndicatorGetStyleFunction 

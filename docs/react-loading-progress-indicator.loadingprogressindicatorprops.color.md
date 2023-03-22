@@ -6,7 +6,7 @@
 
 CSS color of loading indicator (has no effect if getStyle prop set).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 color: string;

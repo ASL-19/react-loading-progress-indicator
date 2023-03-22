@@ -35,7 +35,6 @@ export interface LoadingProgressIndicatorProps {
     key: string | number;
     label: string;
     shouldBeVisibleBeforeFirstTick?: boolean;
-    shouldFocusOnFirstTick?: boolean;
     tickDuration?: number;
     tickDurationFirst?: number;
     tickIncrement?: number;

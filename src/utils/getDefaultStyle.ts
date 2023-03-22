@@ -8,22 +8,18 @@ const getDefaultStyle: LoadingProgressIndicatorGetStyleFunction = ({
   isVisible,
   progress,
 }) => ({
+  background: color,
+  height: "3px",
+  left: 0,
+  opacity: isVisible ? 1 : 0,
   position: "fixed",
   top: 0,
-  left: 0,
-  zIndex: 1031,
-
-  width: "100%",
-  height: "3px",
-
-  background: color,
-  opacity: isVisible ? 1 : 0,
-
-  transition: `opacity ${fadeAnimationDuration}ms, transform ${growAnimationDuration}ms`,
-
   transform: `translate3d(${direction === "ltr" ? "-" : ""}${
     (1 - progress) * 100
   }%, 0, 0)`,
+  transition: `opacity ${fadeAnimationDuration}ms, transform ${growAnimationDuration}ms`,
+  width: "100%",
+  zIndex: 1031,
 });
 
 export default getDefaultStyle;

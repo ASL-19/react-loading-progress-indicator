@@ -6,7 +6,7 @@
 
 Increment of tick (default 0.05).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tickIncrement?: number;

@@ -6,7 +6,7 @@
 
 Direction of loading indicator (default: "ltr").
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 direction?: "ltr" | "rtl";

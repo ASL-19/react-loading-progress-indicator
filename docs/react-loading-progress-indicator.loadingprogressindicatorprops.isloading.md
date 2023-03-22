@@ -6,7 +6,7 @@
 
 Is the represented loading process in progress?
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 isLoading: boolean;

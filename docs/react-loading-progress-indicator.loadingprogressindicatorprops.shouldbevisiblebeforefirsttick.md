@@ -6,7 +6,7 @@
 
 Should the loading indicator be visible before the first tick? (default: false)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 shouldBeVisibleBeforeFirstTick?: boolean;

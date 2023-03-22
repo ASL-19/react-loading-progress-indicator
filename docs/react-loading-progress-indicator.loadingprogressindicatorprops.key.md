@@ -6,7 +6,7 @@
 
 Unique key representing this loading event.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 key: string | number;

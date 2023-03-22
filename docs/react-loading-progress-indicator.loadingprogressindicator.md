@@ -6,7 +6,7 @@
 
 Loading progress indicator (props: [LoadingProgressIndicatorProps](./react-loading-progress-indicator.loadingprogressindicatorprops.md)<!-- -->)
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 LoadingProgressIndicator: FC<LoadingProgressIndicatorProps>

@@ -18,37 +18,46 @@
   "types": "types/react-loading-progress-indicator.d.ts",
   "sideEffects": false,
   "scripts": {
+    "api-documenter:update": "api-documenter markdown --input-folder ./api-extractor --output-folder ./docs",
     "api-extractor:check": "api-extractor run --verbose",
     "api-extractor:update": "api-extractor run --local --verbose",
-    "api-documenter:update": "api-documenter markdown --input-folder ./api-extractor --output-folder ./docs",
     "build": "npm-run-all -l -s clean-dist -p build-cjs build-esm",
-    "build-and-update-api": "npm-run-all -l -s build api-extractor:update api-documenter:update",
+    "build-and-update-api": "run-s -l build api-extractor:update api-documenter:update",
+    "build-check-and-lint": "run-s -l build lint",
     "build-cjs": "tsc --project tsconfig-cjs.json",
     "build-esm": "tsc --project tsconfig-esm.json",
-    "build-check-and-lint": "npm-run-all -l -s build -p api-extractor:check eslint",
-    "prepublishOnly": "npm run build",
     "clean-dist": "rm -rf dist/*",
-    "eslint": "eslint . --ext js,ts"
+    "eslint": "eslint . --ext js,ts",
+    "lint": "run-s -l api-extractor:check eslint prettier-check type-check",
+    "prepublishOnly": "npm run build-check-and-lint",
+    "prettier-check": "prettier --check .",
+    "prettier-write": "prettier --write .",
+    "npm-check-updates": "npm-check-updates",
+    "tsc": "tsc",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@asl-19/js-dom-utils": "^0.1.3"
+    "@asl-19/js-dom-utils": "^0.2.0"
   },
   "devDependencies": {
-    "@asl-19/eslint-config": "^0.4.0",
+    "@asl-19/eslint-config": "^0.7.1",
     "@asl-19/shared-package-configs": "^0.1.1",
-    "@microsoft/api-documenter": "^7.13.63",
-    "@microsoft/api-extractor": "^7.18.16",
-    "@types/react": "^17.0.29",
-    "@types/react-dom": "^17.0.9",
-    "eslint": "^7.32.0",
+    "@microsoft/api-documenter": "^7.21.6",
+    "@microsoft/api-extractor": "^7.34.4",
+    "@types/node": "^18.15.5",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "eslint": "^8.36.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "npm-check-updates": "^16.7.13",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.4.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "typescript": "^4.4.4"
+    "prettier": "^2.8.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.2"
   },
   "peerDependencies": {
-    "react": "^16.11.0 || ^17.0.0",
-    "react-dom": "^16.11.0 || ^17.0.0"
+    "react": ">=16.11.0",
+    "react-dom": ">=16.11.0"
   }
 }

@@ -6,7 +6,7 @@
 
 Duration of first tick in ms (default: 300).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 tickDurationFirst?: number;
