@@ -11,7 +11,6 @@ interface LoadingProgressIndicatorProps {
    */
   color: string;
 
-
   /**
    * Direction of loading indicator (default: "ltr").
    */
@@ -64,19 +63,6 @@ interface LoadingProgressIndicatorProps {
    * tickDuration.
    */
   shouldBeVisibleBeforeFirstTick?: boolean;
-
-  /**
-   * Should the loading indicator be focussed on the first tick? (default:
-   * false).
-   *
-   * @remarks This is likely not the ideal screen reader interaction, but will
-   * give the user feedback about what’s happening. Otherwise they’ll click a
-   * link and have no indication anything’s happening.
-   *
-   * This may be replaced with an ARIA live regions announcement in a future
-   * release.
-   */
-  shouldFocusOnFirstTick?: boolean;
 
   /** {@inheritdoc LoadingProgressIndicatorGetStyleFunction} */
   getStyle?: LoadingProgressIndicatorGetStyleFunction;

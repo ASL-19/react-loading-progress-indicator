@@ -6,7 +6,7 @@
 
 Duration of indicator grow animation in ms (default: 300).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 growAnimationDuration?: number;

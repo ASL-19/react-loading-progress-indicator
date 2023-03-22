@@ -6,7 +6,7 @@
 
 Accessibility aria-label.
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 label: string;

@@ -6,7 +6,7 @@
 
 Duration of fade in/out animation in ms (default: 300).
 
-<b>Signature:</b>
+**Signature:**
 
 ```typescript
 fadeAnimationDuration?: number;

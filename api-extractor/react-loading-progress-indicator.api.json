@@ -1,8 +1,8 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.18.16",
-    "schemaVersion": 1004,
+    "toolVersion": "7.34.4",
+    "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
       "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
@@ -156,18 +156,21 @@
         "@betaDocumentation": true,
         "@internalRemarks": true,
         "@preapproved": true
-      }
+      },
+      "reportUnsupportedHtmlElements": false
     }
   },
   "kind": "Package",
   "canonicalReference": "@asl-19/react-loading-progress-indicator!",
   "docComment": "/**\n * React loading progress indicator component.\n *\n * @packageDocumentation\n */\n",
   "name": "@asl-19/react-loading-progress-indicator",
+  "preserveMemberOrder": false,
   "members": [
     {
       "kind": "EntryPoint",
       "canonicalReference": "@asl-19/react-loading-progress-indicator!",
       "name": "",
+      "preserveMemberOrder": false,
       "members": [
         {
           "kind": "Variable",
@@ -181,7 +184,7 @@
             {
               "kind": "Reference",
               "text": "FC",
-              "canonicalReference": "@types/react!~React.FC:type"
+              "canonicalReference": "@types/react!React.FC:type"
             },
             {
               "kind": "Content",
@@ -190,13 +193,15 @@
             {
               "kind": "Reference",
               "text": "LoadingProgressIndicatorProps",
-              "canonicalReference": "@asl-19/react-loading-progress-indicator!~LoadingProgressIndicatorProps:interface"
+              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps:interface"
             },
             {
               "kind": "Content",
               "text": ">"
             }
           ],
+          "fileUrlPath": "src/components/LoadingProgressIndicator.tsx",
+          "isReadonly": true,
           "releaseTag": "Public",
           "name": "LoadingProgressIndicator",
           "variableTypeTokenRange": {
@@ -214,8 +219,10 @@
               "text": "interface LoadingProgressIndicatorGetStyleFunction "
             }
           ],
+          "fileUrlPath": "src/types/LoadingProgressIndicatorGetStyleFunction.ts",
           "releaseTag": "Public",
           "name": "LoadingProgressIndicatorGetStyleFunction",
+          "preserveMemberOrder": false,
           "members": [
             {
               "kind": "CallSignature",
@@ -237,7 +244,7 @@
                 {
                   "kind": "Reference",
                   "text": "CSSProperties",
-                  "canonicalReference": "@types/react!~React.CSSProperties:interface"
+                  "canonicalReference": "@types/react!React.CSSProperties:interface"
                 },
                 {
                   "kind": "Content",
@@ -256,7 +263,8 @@
                   "parameterTypeTokenRange": {
                     "startIndex": 1,
                     "endIndex": 2
-                  }
+                  },
+                  "isOptional": false
                 }
               ]
             }
@@ -273,8 +281,10 @@
               "text": "interface LoadingProgressIndicatorProps "
             }
           ],
+          "fileUrlPath": "src/types/LoadingProgressIndicatorProps.ts",
           "releaseTag": "Public",
           "name": "LoadingProgressIndicatorProps",
+          "preserveMemberOrder": false,
           "members": [
             {
               "kind": "PropertySignature",
@@ -294,6 +304,7 @@
                   "text": ";"
                 }
               ],
+              "isReadonly": false,
               "isOptional": false,
               "releaseTag": "Public",
               "name": "color",
@@ -320,6 +331,7 @@
                   "text": ";"
                 }
               ],
+              "isReadonly": false,
               "isOptional": true,
               "releaseTag": "Public",
               "name": "direction",
@@ -346,6 +358,7 @@
                   "text": ";"
                 }
               ],
+              "isReadonly": false,
               "isOptional": true,
               "releaseTag": "Public",
               "name": "fadeAnimationDuration",
@@ -366,13 +379,14 @@
                 {
                   "kind": "Reference",
                   "text": "LoadingProgressIndicatorGetStyleFunction",
-                  "canonicalReference": "@asl-19/react-loading-progress-indicator!~LoadingProgressIndicatorGetStyleFunction:interface"
+                  "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorGetStyleFunction:interface"
                 },
                 {
                   "kind": "Content",
                   "text": ";"
                 }
               ],
+              "isReadonly": false,
               "isOptional": true,
               "releaseTag": "Public",
               "name": "getStyle",
@@ -399,6 +413,7 @@
                   "text": ";"
                 }
               ],
+              "isReadonly": false,
               "isOptional": true,
               "releaseTag": "Public",
               "name": "growAnimationDuration",
@@ -425,6 +440,7 @@
                   "text": ";"
                 }
               ],
+              "isReadonly": false,
               "isOptional": false,
               "releaseTag": "Public",
               "name": "isLoading",
@@ -451,6 +467,7 @@
                   "text": ";"
                 }
               ],
+              "isReadonly": false,
               "isOptional": false,
               "releaseTag": "Public",
               "name": "key",
@@ -477,6 +494,7 @@
                   "text": ";"
                 }
               ],
+              "isReadonly": false,
               "isOptional": false,
               "releaseTag": "Public",
               "name": "label",
@@ -503,35 +521,10 @@
                   "text": ";"
                 }
               ],
+              "isReadonly": false,
               "isOptional": true,
               "releaseTag": "Public",
               "name": "shouldBeVisibleBeforeFirstTick",
-              "propertyTypeTokenRange": {
-                "startIndex": 1,
-                "endIndex": 2
-              }
-            },
-            {
-              "kind": "PropertySignature",
-              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps#shouldFocusOnFirstTick:member",
-              "docComment": "/**\n * Should the loading indicator be focussed on the first tick? (default: false).\n *\n * @remarks\n *\n * This is likely not the ideal screen reader interaction, but will give the user feedback about what’s happening. Otherwise they’ll click a link and have no indication anything’s happening.\n *\n * This may be replaced with an ARIA live regions announcement in a future release.\n */\n",
-              "excerptTokens": [
-                {
-                  "kind": "Content",
-                  "text": "shouldFocusOnFirstTick?: "
-                },
-                {
-                  "kind": "Content",
-                  "text": "boolean"
-                },
-                {
-                  "kind": "Content",
-                  "text": ";"
-                }
-              ],
-              "isOptional": true,
-              "releaseTag": "Public",
-              "name": "shouldFocusOnFirstTick",
               "propertyTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
@@ -555,6 +548,7 @@
                   "text": ";"
                 }
               ],
+              "isReadonly": false,
               "isOptional": true,
               "releaseTag": "Public",
               "name": "tickDuration",
@@ -581,6 +575,7 @@
                   "text": ";"
                 }
               ],
+              "isReadonly": false,
               "isOptional": true,
               "releaseTag": "Public",
               "name": "tickDurationFirst",
@@ -607,6 +602,7 @@
                   "text": ";"
                 }
               ],
+              "isReadonly": false,
               "isOptional": true,
               "releaseTag": "Public",
               "name": "tickIncrement",
@@ -633,6 +629,7 @@
                   "text": ";"
                 }
               ],
+              "isReadonly": false,
               "isOptional": true,
               "releaseTag": "Public",
               "name": "tickIncrementFirst",

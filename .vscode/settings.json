@@ -1,12 +1,13 @@
 {
   "cSpell.words": [
-    "Heaslip",
-    "Unmemoized",
     "destructure",
     "getstyle",
+    "Heaslip",
     "loadingprogressindicatorprops",
     "nprogress",
+    "rushstack",
     "tsdoc",
+    "Unmemoized",
     "unscoped"
   ],
   "editor.codeActionsOnSave": {
@@ -27,6 +28,9 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "markdown.extension.toc.levels": "2..6",
+  "redhat.telemetry.enabled": false,
+  "rewrap.reformat": true,
+  "rewrap.wrappingColumn": 80,
   "search.exclude": {
     "api-extractor/**/*": true,
     "CHANGELOG": true,
@@ -41,7 +45,8 @@
   "typescript.preferences.quoteStyle": "double",
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "[json]": {
+  "[javascript][json][jsonc][markdown][typescript][typescriptreact][yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   }
 }
