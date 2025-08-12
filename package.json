@@ -2,6 +2,7 @@
   "name": "@asl-19/react-loading-progress-indicator",
   "version": "0.3.0",
   "description": "React loading progress indicator component",
+  "type": "module",
   "author": {
     "name": "Grant Heaslip",
     "email": "grant@asl19.org",
@@ -11,53 +12,56 @@
   "repository": "ASL-19/react-loading-progress-indicator",
   "files": [
     "dist/**/*.js*",
-    "types/**/*.d.ts"
+    "dist/**/*.d.ts"
   ],
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "types/react-loading-progress-indicator.d.ts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "default": "./dist/index.js"
+  },
   "sideEffects": false,
   "scripts": {
-    "api-documenter:update": "api-documenter markdown --input-folder ./api-extractor --output-folder ./docs",
-    "api-extractor:check": "api-extractor run --verbose",
-    "api-extractor:update": "api-extractor run --local --verbose",
-    "build": "npm-run-all -l -s clean-dist -p build-cjs build-esm",
-    "build-and-update-api": "run-s -l build api-extractor:update api-documenter:update",
-    "build-check-and-lint": "run-s -l build lint",
-    "build-cjs": "tsc --project tsconfig-cjs.json",
-    "build-esm": "tsc --project tsconfig-esm.json",
-    "clean-dist": "rm -rf dist/*",
-    "eslint": "eslint . --ext js,ts",
-    "lint": "run-s -l api-extractor:check eslint prettier-check type-check",
-    "prepublishOnly": "npm run build-check-and-lint",
-    "prettier-check": "prettier --check .",
-    "prettier-write": "prettier --write .",
+    "api-extractor-check": "api-extractor run --verbose",
+    "api-extractor-update": "api-extractor run --local --verbose && api-documenter markdown --input-folder ./api-extractor --output-folder ./docs",
+    "build-lint-test": "npm-run-all -l -p tsc -s lint-test",
+    "dev-lint-test": "run-s package-changed lint-test",
+    "eslint-check": "eslint . --ext='js,ts,tsx'",
+    "eslint-fix": "eslint . --ext='js,ts,tsx' --fix",
+    "lint-test": "run-p -l api-extractor-check eslint-check prettier-check tsc-check",
+    "package-changed": "package-changed",
+    "rm-dist": "rm -rf dist",
+    "prepublishOnly": "run-s rm-dist build-lint-test",
+    "prettier-check": "prettier --config prettier.config.js --check .",
+    "prettier-fix": "prettier --config prettier.config.js --write .",
     "npm-check-updates": "npm-check-updates",
-    "tsc": "tsc",
-    "type-check": "tsc --noEmit"
+    "tsc": "tsc --project tsconfig-esm.json",
+    "tsc-watch": "tsc --project tsconfig-esm.json --watch",
+    "tsc-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@asl-19/js-dom-utils": "^0.2.0"
+    "@asl-19/js-dom-utils": "^0.2.1"
   },
   "devDependencies": {
-    "@asl-19/eslint-config": "^0.7.1",
-    "@asl-19/shared-package-configs": "^0.1.1",
-    "@microsoft/api-documenter": "^7.21.6",
-    "@microsoft/api-extractor": "^7.34.4",
-    "@types/node": "^18.15.5",
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "eslint": "^8.36.0",
+    "@asl-19/eslint-config": "^0.9.0",
+    "@asl-19/shared-package-configs": "^0.3.0",
+    "@microsoft/api-documenter": "^7.26.31",
+    "@microsoft/api-extractor": "^7.52.10",
+    "@types/node": "^24.2.1",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "eslint": "^9.33.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
-    "npm-check-updates": "^16.7.13",
+    "npm-check-updates": "^18.0.2",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.8.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "typescript": "^5.0.2"
+    "prettier": "^3.6.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "typescript": "^5.9.2"
   },
   "peerDependencies": {
     "react": ">=16.11.0",
     "react-dom": ">=16.11.0"
+  },
+  "overrides": {
+    "@arthurgeron/eslint-plugin-react-usememo": "2.4.4"
   }
 }

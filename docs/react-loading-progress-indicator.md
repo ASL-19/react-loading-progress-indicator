@@ -6,16 +6,66 @@
 
 React loading progress indicator component.
 
-## Interfaces
-
-|  Interface | Description |
-|  --- | --- |
-|  [LoadingProgressIndicatorGetStyleFunction](./react-loading-progress-indicator.loadingprogressindicatorgetstylefunction.md) | Function returning loading indicator styles. |
-|  [LoadingProgressIndicatorProps](./react-loading-progress-indicator.loadingprogressindicatorprops.md) | LoadingProgressIndicator props |
-
 ## Variables
 
-|  Variable | Description |
-|  --- | --- |
-|  [LoadingProgressIndicator](./react-loading-progress-indicator.loadingprogressindicator.md) | Loading progress indicator (props: [LoadingProgressIndicatorProps](./react-loading-progress-indicator.loadingprogressindicatorprops.md)<!-- -->) |
+<table><thead><tr><th>
+
+Variable
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[LoadingProgressIndicator](./react-loading-progress-indicator.loadingprogressindicator.md)
+
+
+</td><td>
+
+Loading progress indicator (props: [LoadingProgressIndicatorProps](./react-loading-progress-indicator.loadingprogressindicatorprops.md)<!-- -->)
+
+
+</td></tr>
+</tbody></table>
+
+## Type Aliases
+
+<table><thead><tr><th>
+
+Type Alias
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[LoadingProgressIndicatorGetStyleFunction](./react-loading-progress-indicator.loadingprogressindicatorgetstylefunction.md)
+
+
+</td><td>
+
+Function returning loading indicator styles.
+
+
+</td></tr>
+<tr><td>
+
+[LoadingProgressIndicatorProps](./react-loading-progress-indicator.loadingprogressindicatorprops.md)
+
+
+</td><td>
+
+LoadingProgressIndicator props
+
+
+</td></tr>
+</tbody></table>
 

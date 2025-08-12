@@ -5,7 +5,7 @@ import LoadingProgressIndicatorGetStyleFunction from "./LoadingProgressIndicator
  *
  * @public
  */
-interface LoadingProgressIndicatorProps {
+type LoadingProgressIndicatorProps = {
   /**
    * CSS color of loading indicator (has no effect if getStyle prop set).
    */
@@ -20,6 +20,9 @@ interface LoadingProgressIndicatorProps {
    * Duration of fade in/out animation in ms (default: 300).
    */
   fadeAnimationDuration?: number;
+
+  /** {@inheritdoc LoadingProgressIndicatorGetStyleFunction} */
+  getStyle?: LoadingProgressIndicatorGetStyleFunction;
 
   /**
    * Duration of indicator grow animation in ms (default: 300).
@@ -44,7 +47,7 @@ interface LoadingProgressIndicatorProps {
    *
    * See https://reactjs.org/docs/reconciliation.html#keys
    */
-  key: string | number;
+  key: number | string;
 
   /**
    * Accessibility aria-label.
@@ -63,9 +66,6 @@ interface LoadingProgressIndicatorProps {
    * tickDuration.
    */
   shouldBeVisibleBeforeFirstTick?: boolean;
-
-  /** {@inheritdoc LoadingProgressIndicatorGetStyleFunction} */
-  getStyle?: LoadingProgressIndicatorGetStyleFunction;
 
   /**
    * Duration of tick in ms (default: 1000).
@@ -99,6 +99,6 @@ interface LoadingProgressIndicatorProps {
    * It may be preferable to make the first tick increment progress more.
    */
   tickIncrementFirst?: number;
-}
+};
 
 export default LoadingProgressIndicatorProps;

@@ -2,11 +2,13 @@
   "extends": "@asl-19/shared-package-configs/tsconfig-base.json",
   "include": [
     "*.js",
+    "*.mjs",
     "*.ts",
     ".eslintrc.js",
     "src/**/*.ts*"
   ],
   "compilerOptions": {
-    "outDir": "dist"
+    "outDir": "dist",
+    "moduleResolution": "Bundler"
   }
 }

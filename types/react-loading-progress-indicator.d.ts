@@ -40,23 +40,21 @@ export default LoadingProgressIndicator;
  *
  * @public
  */
-export declare interface LoadingProgressIndicatorGetStyleFunction {
-    (attrs: {
-        color: string;
-        direction: "ltr" | "rtl";
-        fadeAnimationDuration: number;
-        growAnimationDuration: number;
-        isVisible: boolean;
-        progress: number;
-    }): CSSProperties;
-}
+export declare type LoadingProgressIndicatorGetStyleFunction = (attrs: {
+    color: string;
+    direction: "ltr" | "rtl";
+    fadeAnimationDuration: number;
+    growAnimationDuration: number;
+    isVisible: boolean;
+    progress: number;
+}) => CSSProperties;
 
 /**
  * LoadingProgressIndicator props
  *
  * @public
  */
-export declare interface LoadingProgressIndicatorProps {
+export declare type LoadingProgressIndicatorProps = {
     /**
      * CSS color of loading indicator (has no effect if getStyle prop set).
      */
@@ -69,6 +67,8 @@ export declare interface LoadingProgressIndicatorProps {
      * Duration of fade in/out animation in ms (default: 300).
      */
     fadeAnimationDuration?: number;
+    /** {@inheritdoc LoadingProgressIndicatorGetStyleFunction} */
+    getStyle?: LoadingProgressIndicatorGetStyleFunction;
     /**
      * Duration of indicator grow animation in ms (default: 300).
      */
@@ -90,7 +90,7 @@ export declare interface LoadingProgressIndicatorProps {
      *
      * See https://reactjs.org/docs/reconciliation.html#keys
      */
-    key: string | number;
+    key: number | string;
     /**
      * Accessibility aria-label.
      *
@@ -107,8 +107,6 @@ export declare interface LoadingProgressIndicatorProps {
      * tickDuration.
      */
     shouldBeVisibleBeforeFirstTick?: boolean;
-    /** {@inheritdoc LoadingProgressIndicatorGetStyleFunction} */
-    getStyle?: LoadingProgressIndicatorGetStyleFunction;
     /**
      * Duration of tick in ms (default: 1000).
      *
@@ -138,6 +136,6 @@ export declare interface LoadingProgressIndicatorProps {
      * It may be preferable to make the first tick increment progress more.
      */
     tickIncrementFirst?: number;
-}
+};
 
 export { }
