@@ -6,6 +6,32 @@
 
 React loading progress indicator component.
 
+## Interfaces
+
+<table><thead><tr><th>
+
+Interface
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[LoadingProgressIndicatorProps](./react-loading-progress-indicator.loadingprogressindicatorprops.md)
+
+
+</td><td>
+
+LoadingProgressIndicator props
+
+
+</td></tr>
+</tbody></table>
+
 ## Variables
 
 <table><thead><tr><th>
@@ -53,17 +79,6 @@ Description
 </td><td>
 
 Function returning loading indicator styles.
-
-
-</td></tr>
-<tr><td>
-
-[LoadingProgressIndicatorProps](./react-loading-progress-indicator.loadingprogressindicatorprops.md)
-
-
-</td><td>
-
-LoadingProgressIndicator props
 
 
 </td></tr>

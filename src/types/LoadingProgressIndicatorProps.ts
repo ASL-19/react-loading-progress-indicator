@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/consistent-type-definitions */
 import LoadingProgressIndicatorGetStyleFunction from "./LoadingProgressIndicatorGetStyleFunction";
 
 /**
@@ -5,7 +6,7 @@ import LoadingProgressIndicatorGetStyleFunction from "./LoadingProgressIndicator
  *
  * @public
  */
-type LoadingProgressIndicatorProps = {
+interface LoadingProgressIndicatorProps {
   /**
    * CSS color of loading indicator (has no effect if getStyle prop set).
    */
@@ -99,6 +100,6 @@ type LoadingProgressIndicatorProps = {
    * It may be preferable to make the first tick increment progress more.
    */
   tickIncrementFirst?: number;
-};
+}
 
 export default LoadingProgressIndicatorProps;

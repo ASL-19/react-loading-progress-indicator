@@ -193,14 +193,14 @@
             {
               "kind": "Reference",
               "text": "LoadingProgressIndicatorProps",
-              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps:type"
+              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps:interface"
             },
             {
               "kind": "Content",
               "text": ">"
             }
           ],
-          "fileUrlPath": "src/components/LoadingProgressIndicator.tsx",
+          "fileUrlPath": "dist/components/LoadingProgressIndicator.d.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "LoadingProgressIndicator",
@@ -232,7 +232,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "src/types/LoadingProgressIndicatorGetStyleFunction.ts",
+          "fileUrlPath": "dist/types/LoadingProgressIndicatorGetStyleFunction.d.ts",
           "releaseTag": "Public",
           "name": "LoadingProgressIndicatorGetStyleFunction",
           "typeTokenRange": {
@@ -241,39 +241,374 @@
           }
         },
         {
-          "kind": "TypeAlias",
-          "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps:type",
+          "kind": "Interface",
+          "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps:interface",
           "docComment": "/**\n * LoadingProgressIndicator props\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "type LoadingProgressIndicatorProps = "
-            },
-            {
-              "kind": "Content",
-              "text": "{\n    color: string;\n    direction?: \"ltr\" | \"rtl\";\n    fadeAnimationDuration?: number;\n    getStyle?: "
-            },
-            {
-              "kind": "Reference",
-              "text": "LoadingProgressIndicatorGetStyleFunction",
-              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorGetStyleFunction:type"
-            },
-            {
-              "kind": "Content",
-              "text": ";\n    growAnimationDuration?: number;\n    isLoading: boolean;\n    key: number | string;\n    label: string;\n    shouldBeVisibleBeforeFirstTick?: boolean;\n    tickDuration?: number;\n    tickDurationFirst?: number;\n    tickIncrement?: number;\n    tickIncrementFirst?: number;\n}"
-            },
-            {
-              "kind": "Content",
-              "text": ";"
+              "text": "interface LoadingProgressIndicatorProps "
             }
           ],
-          "fileUrlPath": "src/types/LoadingProgressIndicatorProps.ts",
+          "fileUrlPath": "dist/types/LoadingProgressIndicatorProps.d.ts",
           "releaseTag": "Public",
           "name": "LoadingProgressIndicatorProps",
-          "typeTokenRange": {
-            "startIndex": 1,
-            "endIndex": 4
-          }
+          "preserveMemberOrder": false,
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps#color:member",
+              "docComment": "/**\n * CSS color of loading indicator (has no effect if getStyle prop set).\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "color: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "color",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps#direction:member",
+              "docComment": "/**\n * Direction of loading indicator (default: \"ltr\").\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "direction?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"ltr\" | \"rtl\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "direction",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps#fadeAnimationDuration:member",
+              "docComment": "/**\n * Duration of fade in/out animation in ms (default: 300).\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fadeAnimationDuration?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "fadeAnimationDuration",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps#getStyle:member",
+              "docComment": "/**\n * Function returning loading indicator styles.\n *\n * @remarks\n *\n * Called with attrs argument containing config and state values:\n *\n * - {@link LoadingProgressIndicatorProps.color | color}\n *\n * - {@link LoadingProgressIndicatorProps.direction | direction}\n *\n * - {@link LoadingProgressIndicatorProps.fadeAnimationDuration | fadeAnimationDuration}\n *\n * - {@link LoadingProgressIndicatorProps.growAnimationDuration | growAnimationDuration}\n *\n * - isVisible (boolean)\n *\n * - progress (number 0 and 1)\n *\n * Function definition should be outside of render function or wrapped in useCallback to prevent unnecessary re-renders.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getStyle?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "LoadingProgressIndicatorGetStyleFunction",
+                  "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorGetStyleFunction:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "getStyle",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps#growAnimationDuration:member",
+              "docComment": "/**\n * Duration of indicator grow animation in ms (default: 300).\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "growAnimationDuration?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "growAnimationDuration",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps#isLoading:member",
+              "docComment": "/**\n * Is the represented loading process in progress?\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "isLoading: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "isLoading",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps#key:member",
+              "docComment": "/**\n * Unique key representing this loading event.\n *\n * @remarks\n *\n * Each LoadingProgressIndicator instance must have a key prop, which should be set to a unique value for the loading event.\n *\n * This component is designed with the assumption that each instance is mapped to a single loading event. This allows it to be simpler and avoids a number of potential bugs and edge cases.\n *\n * See https://reactjs.org/docs/reconciliation.html#keys\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number | string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "key",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps#label:member",
+              "docComment": "/**\n * Accessibility aria-label.\n *\n * @remarks\n *\n * Will be announced on first tick if shouldFocusOnFirstTick.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "label: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "label",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps#shouldBeVisibleBeforeFirstTick:member",
+              "docComment": "/**\n * Should the loading indicator be visible before the first tick? (default: false)\n *\n * @remarks\n *\n * It may be preferable to hide the loading indicator before the first tick if there’s a reasonable chance loading will be complete in less than tickDuration.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "shouldBeVisibleBeforeFirstTick?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "shouldBeVisibleBeforeFirstTick",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps#tickDuration:member",
+              "docComment": "/**\n * Duration of tick in ms (default: 1000).\n *\n * @remarks\n *\n * Note that the first tick duration comes from tickDurationFirst\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "tickDuration?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "tickDuration",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps#tickDurationFirst:member",
+              "docComment": "/**\n * Duration of first tick in ms (default: 300).\n *\n * @remarks\n *\n * It may be preferable to make the first tick shorter to give the user quicker feedback when they click a link.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "tickDurationFirst?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "tickDurationFirst",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps#tickIncrement:member",
+              "docComment": "/**\n * Increment of tick (default 0.05).\n *\n * @remarks\n *\n * Note that the first tick increment comes from tickIncrementFirst.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "tickIncrement?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "tickIncrement",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorProps#tickIncrementFirst:member",
+              "docComment": "/**\n * Increment of first tick (default 0.1).\n *\n * @remarks\n *\n * It may be preferable to make the first tick increment progress more.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "tickIncrementFirst?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "tickIncrementFirst",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
         }
       ]
     }

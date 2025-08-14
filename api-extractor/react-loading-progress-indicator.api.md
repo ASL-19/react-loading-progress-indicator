@@ -22,7 +22,7 @@ export type LoadingProgressIndicatorGetStyleFunction = (attrs: {
 }) => CSSProperties;
 
 // @public
-export type LoadingProgressIndicatorProps = {
+export interface LoadingProgressIndicatorProps {
     color: string;
     direction?: "ltr" | "rtl";
     fadeAnimationDuration?: number;
@@ -36,6 +36,6 @@ export type LoadingProgressIndicatorProps = {
     tickDurationFirst?: number;
     tickIncrement?: number;
     tickIncrementFirst?: number;
-};
+}
 
 ```
