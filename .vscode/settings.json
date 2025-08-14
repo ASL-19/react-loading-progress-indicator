@@ -5,10 +5,12 @@
     "Heaslip",
     "loadingprogressindicatorprops",
     "nprogress",
+    "packagehash",
     "rushstack",
     "tsdoc",
     "Unmemoized",
-    "unscoped"
+    "unscoped",
+    "yalc"
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
