@@ -7,15 +7,14 @@
     "src/**/*.ts*"
   ],
   "compilerOptions": {
-    "outDir": "dist",
-    "moduleResolution": "Bundler",
     "allowJs": true,
     "checkJs": true,
     "declaration": true,
     "incremental": true,
-    "module": "esnext",
-    "strict": true,
     "jsx": "react-jsx",
+    "module": "preserve",
+    "outDir": "dist",
+    "strict": true,
     "target": "es2021"
   }
 }
