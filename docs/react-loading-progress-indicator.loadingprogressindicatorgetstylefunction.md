@@ -2,14 +2,21 @@
 
 [Home](./index.md) &gt; [@asl-19/react-loading-progress-indicator](./react-loading-progress-indicator.md) &gt; [LoadingProgressIndicatorGetStyleFunction](./react-loading-progress-indicator.loadingprogressindicatorgetstylefunction.md)
 
-## LoadingProgressIndicatorGetStyleFunction interface
+## LoadingProgressIndicatorGetStyleFunction type
 
 Function returning loading indicator styles.
 
 **Signature:**
 
 ```typescript
-interface LoadingProgressIndicatorGetStyleFunction 
+type LoadingProgressIndicatorGetStyleFunction = (attrs: {
+    color: string;
+    direction: "ltr" | "rtl";
+    fadeAnimationDuration: number;
+    growAnimationDuration: number;
+    isVisible: boolean;
+    progress: number;
+}) => CSSProperties;
 ```
 
 ## Remarks

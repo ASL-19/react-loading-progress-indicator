@@ -104,7 +104,7 @@ const LoadingProgressIndicatorUnmemoized: FC<LoadingProgressIndicatorProps> = ({
     tickIncrementFirst,
   ]);
 
-  const getStyleFunction = getStyle || getDefaultStyle;
+  const getStyleFunction = getStyle ?? getDefaultStyle;
 
   const style = getStyleFunction({
     color,

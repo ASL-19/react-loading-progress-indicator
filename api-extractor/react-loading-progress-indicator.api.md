@@ -12,17 +12,14 @@ const LoadingProgressIndicator: FC<LoadingProgressIndicatorProps>;
 export default LoadingProgressIndicator;
 
 // @public
-export interface LoadingProgressIndicatorGetStyleFunction {
-    // (undocumented)
-    (attrs: {
-        color: string;
-        direction: "ltr" | "rtl";
-        fadeAnimationDuration: number;
-        growAnimationDuration: number;
-        isVisible: boolean;
-        progress: number;
-    }): CSSProperties;
-}
+export type LoadingProgressIndicatorGetStyleFunction = (attrs: {
+    color: string;
+    direction: "ltr" | "rtl";
+    fadeAnimationDuration: number;
+    growAnimationDuration: number;
+    isVisible: boolean;
+    progress: number;
+}) => CSSProperties;
 
 // @public
 export interface LoadingProgressIndicatorProps {
@@ -32,7 +29,7 @@ export interface LoadingProgressIndicatorProps {
     getStyle?: LoadingProgressIndicatorGetStyleFunction;
     growAnimationDuration?: number;
     isLoading: boolean;
-    key: string | number;
+    key: number | string;
     label: string;
     shouldBeVisibleBeforeFirstTick?: boolean;
     tickDuration?: number;

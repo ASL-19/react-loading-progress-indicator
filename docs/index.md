@@ -6,7 +6,27 @@
 
 ## Packages
 
-|  Package | Description |
-|  --- | --- |
-|  [@asl-19/react-loading-progress-indicator](./react-loading-progress-indicator.md) | React loading progress indicator component. |
+<table><thead><tr><th>
+
+Package
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[@asl-19/react-loading-progress-indicator](./react-loading-progress-indicator.md)
+
+
+</td><td>
+
+React loading progress indicator component.
+
+
+</td></tr>
+</tbody></table>
 
