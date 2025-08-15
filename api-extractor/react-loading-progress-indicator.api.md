@@ -4,8 +4,11 @@
 
 ```ts
 
-import { CSSProperties } from 'react';
-import { FC } from 'react';
+import type { CSSProperties } from 'react';
+import type { FC } from 'react';
+
+// @public
+export const getDefaultStyle: LoadingProgressIndicatorGetStyleFunction;
 
 // @public
 const LoadingProgressIndicator: FC<LoadingProgressIndicatorProps>;
