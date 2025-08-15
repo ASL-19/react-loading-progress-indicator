@@ -5,13 +5,15 @@
     "Heaslip",
     "loadingprogressindicatorprops",
     "nprogress",
+    "packagehash",
     "rushstack",
     "tsdoc",
     "Unmemoized",
-    "unscoped"
+    "unscoped",
+    "yalc"
   ],
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "editor.formatOnSave": false,
   "editor.tabSize": 2,
@@ -37,8 +39,7 @@
     "dist/**/*": true,
     "docs/**/*": true,
     "LICENSE": true,
-    "package-lock.json": true,
-    "types/**/*": true
+    "package-lock.json": true
   },
   "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.preferences.importModuleSpecifierEnding": "minimal",

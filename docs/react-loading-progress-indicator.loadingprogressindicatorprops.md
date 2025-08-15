@@ -14,19 +14,273 @@ interface LoadingProgressIndicatorProps
 
 ## Properties
 
-|  Property | Modifiers | Type | Description |
-|  --- | --- | --- | --- |
-|  [color](./react-loading-progress-indicator.loadingprogressindicatorprops.color.md) |  | string | CSS color of loading indicator (has no effect if getStyle prop set). |
-|  [direction?](./react-loading-progress-indicator.loadingprogressindicatorprops.direction.md) |  | "ltr" \| "rtl" | _(Optional)_ Direction of loading indicator (default: "ltr"). |
-|  [fadeAnimationDuration?](./react-loading-progress-indicator.loadingprogressindicatorprops.fadeanimationduration.md) |  | number | _(Optional)_ Duration of fade in/out animation in ms (default: 300). |
-|  [getStyle?](./react-loading-progress-indicator.loadingprogressindicatorprops.getstyle.md) |  | [LoadingProgressIndicatorGetStyleFunction](./react-loading-progress-indicator.loadingprogressindicatorgetstylefunction.md) | _(Optional)_ Function returning loading indicator styles. |
-|  [growAnimationDuration?](./react-loading-progress-indicator.loadingprogressindicatorprops.growanimationduration.md) |  | number | _(Optional)_ Duration of indicator grow animation in ms (default: 300). |
-|  [isLoading](./react-loading-progress-indicator.loadingprogressindicatorprops.isloading.md) |  | boolean | Is the represented loading process in progress? |
-|  [key](./react-loading-progress-indicator.loadingprogressindicatorprops.key.md) |  | string \| number | Unique key representing this loading event. |
-|  [label](./react-loading-progress-indicator.loadingprogressindicatorprops.label.md) |  | string | Accessibility aria-label. |
-|  [shouldBeVisibleBeforeFirstTick?](./react-loading-progress-indicator.loadingprogressindicatorprops.shouldbevisiblebeforefirsttick.md) |  | boolean | _(Optional)_ Should the loading indicator be visible before the first tick? (default: false) |
-|  [tickDuration?](./react-loading-progress-indicator.loadingprogressindicatorprops.tickduration.md) |  | number | _(Optional)_ Duration of tick in ms (default: 1000). |
-|  [tickDurationFirst?](./react-loading-progress-indicator.loadingprogressindicatorprops.tickdurationfirst.md) |  | number | _(Optional)_ Duration of first tick in ms (default: 300). |
-|  [tickIncrement?](./react-loading-progress-indicator.loadingprogressindicatorprops.tickincrement.md) |  | number | _(Optional)_ Increment of tick (default 0.05). |
-|  [tickIncrementFirst?](./react-loading-progress-indicator.loadingprogressindicatorprops.tickincrementfirst.md) |  | number | _(Optional)_ Increment of first tick (default 0.1). |
+<table><thead><tr><th>
+
+Property
+
+
+</th><th>
+
+Modifiers
+
+
+</th><th>
+
+Type
+
+
+</th><th>
+
+Description
+
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[color](./react-loading-progress-indicator.loadingprogressindicatorprops.color.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+CSS color of loading indicator (has no effect if getStyle prop set).
+
+
+</td></tr>
+<tr><td>
+
+[direction?](./react-loading-progress-indicator.loadingprogressindicatorprops.direction.md)
+
+
+</td><td>
+
+
+</td><td>
+
+"ltr" \| "rtl"
+
+
+</td><td>
+
+_(Optional)_ Direction of loading indicator (default: "ltr").
+
+
+</td></tr>
+<tr><td>
+
+[fadeAnimationDuration?](./react-loading-progress-indicator.loadingprogressindicatorprops.fadeanimationduration.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ Duration of fade in/out animation in ms (default: 300).
+
+
+</td></tr>
+<tr><td>
+
+[getStyle?](./react-loading-progress-indicator.loadingprogressindicatorprops.getstyle.md)
+
+
+</td><td>
+
+
+</td><td>
+
+[LoadingProgressIndicatorGetStyleFunction](./react-loading-progress-indicator.loadingprogressindicatorgetstylefunction.md)
+
+
+</td><td>
+
+_(Optional)_ Function returning loading indicator styles.
+
+
+</td></tr>
+<tr><td>
+
+[growAnimationDuration?](./react-loading-progress-indicator.loadingprogressindicatorprops.growanimationduration.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ Duration of indicator grow animation in ms (default: 300).
+
+
+</td></tr>
+<tr><td>
+
+[isLoading](./react-loading-progress-indicator.loadingprogressindicatorprops.isloading.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+Is the represented loading process in progress?
+
+
+</td></tr>
+<tr><td>
+
+[key](./react-loading-progress-indicator.loadingprogressindicatorprops.key.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number \| string
+
+
+</td><td>
+
+Unique key representing this loading event.
+
+
+</td></tr>
+<tr><td>
+
+[label](./react-loading-progress-indicator.loadingprogressindicatorprops.label.md)
+
+
+</td><td>
+
+
+</td><td>
+
+string
+
+
+</td><td>
+
+Accessibility aria-label.
+
+
+</td></tr>
+<tr><td>
+
+[shouldBeVisibleBeforeFirstTick?](./react-loading-progress-indicator.loadingprogressindicatorprops.shouldbevisiblebeforefirsttick.md)
+
+
+</td><td>
+
+
+</td><td>
+
+boolean
+
+
+</td><td>
+
+_(Optional)_ Should the loading indicator be visible before the first tick? (default: false)
+
+
+</td></tr>
+<tr><td>
+
+[tickDuration?](./react-loading-progress-indicator.loadingprogressindicatorprops.tickduration.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ Duration of tick in ms (default: 1000).
+
+
+</td></tr>
+<tr><td>
+
+[tickDurationFirst?](./react-loading-progress-indicator.loadingprogressindicatorprops.tickdurationfirst.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ Duration of first tick in ms (default: 300).
+
+
+</td></tr>
+<tr><td>
+
+[tickIncrement?](./react-loading-progress-indicator.loadingprogressindicatorprops.tickincrement.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ Increment of tick (default 0.05).
+
+
+</td></tr>
+<tr><td>
+
+[tickIncrementFirst?](./react-loading-progress-indicator.loadingprogressindicatorprops.tickincrementfirst.md)
+
+
+</td><td>
+
+
+</td><td>
+
+number
+
+
+</td><td>
+
+_(Optional)_ Increment of first tick (default 0.1).
+
+
+</td></tr>
+</tbody></table>
 

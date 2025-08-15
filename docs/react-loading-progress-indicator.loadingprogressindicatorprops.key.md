@@ -9,7 +9,7 @@ Unique key representing this loading event.
 **Signature:**
 
 ```typescript
-key: string | number;
+key: number | string;
 ```
 
 ## Remarks

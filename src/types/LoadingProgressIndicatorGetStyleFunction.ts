@@ -23,15 +23,13 @@ import { CSSProperties } from "react";
  *
  * @public
  */
-interface LoadingProgressIndicatorGetStyleFunction {
-  (attrs: {
-    color: string;
-    direction: "ltr" | "rtl";
-    fadeAnimationDuration: number;
-    growAnimationDuration: number;
-    isVisible: boolean;
-    progress: number;
-  }): CSSProperties;
-}
+type LoadingProgressIndicatorGetStyleFunction = (attrs: {
+  color: string;
+  direction: "ltr" | "rtl";
+  fadeAnimationDuration: number;
+  growAnimationDuration: number;
+  isVisible: boolean;
+  progress: number;
+}) => CSSProperties;
 
 export default LoadingProgressIndicatorGetStyleFunction;

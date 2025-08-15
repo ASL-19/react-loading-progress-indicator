@@ -4,6 +4,6 @@
  * @packageDocumentation
  */
 
-export { default } from "./components/LoadingProgressIndicator";
-export { default as LoadingProgressIndicatorGetStyleFunction } from "./types/LoadingProgressIndicatorGetStyleFunction";
-export { default as LoadingProgressIndicatorProps } from "./types/LoadingProgressIndicatorProps";
+export { default } from "./components/LoadingProgressIndicator.js";
+export type { default as LoadingProgressIndicatorGetStyleFunction } from "./types/LoadingProgressIndicatorGetStyleFunction.js";
+export type { default as LoadingProgressIndicatorProps } from "./types/LoadingProgressIndicatorProps.js";

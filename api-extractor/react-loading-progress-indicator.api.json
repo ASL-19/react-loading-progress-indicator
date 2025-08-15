@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.34.4",
+    "toolVersion": "7.52.10",
     "schemaVersion": 1011,
     "oldestForwardsCompatibleVersion": 1001,
     "tsdocConfig": {
@@ -200,7 +200,7 @@
               "text": ">"
             }
           ],
-          "fileUrlPath": "src/components/LoadingProgressIndicator.tsx",
+          "fileUrlPath": "dist/components/LoadingProgressIndicator.d.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "LoadingProgressIndicator",
@@ -210,66 +210,35 @@
           }
         },
         {
-          "kind": "Interface",
-          "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorGetStyleFunction:interface",
+          "kind": "TypeAlias",
+          "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorGetStyleFunction:type",
           "docComment": "/**\n * Function returning loading indicator styles.\n *\n * @remarks\n *\n * Called with attrs argument containing config and state values:\n *\n * - {@link LoadingProgressIndicatorProps.color | color}\n *\n * - {@link LoadingProgressIndicatorProps.direction | direction}\n *\n * - {@link LoadingProgressIndicatorProps.fadeAnimationDuration | fadeAnimationDuration}\n *\n * - {@link LoadingProgressIndicatorProps.growAnimationDuration | growAnimationDuration}\n *\n * - isVisible (boolean)\n *\n * - progress (number 0 and 1)\n *\n * Function definition should be outside of render function or wrapped in useCallback to prevent unnecessary re-renders.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "interface LoadingProgressIndicatorGetStyleFunction "
+              "text": "type LoadingProgressIndicatorGetStyleFunction = "
+            },
+            {
+              "kind": "Content",
+              "text": "(attrs: {\n    color: string;\n    direction: \"ltr\" | \"rtl\";\n    fadeAnimationDuration: number;\n    growAnimationDuration: number;\n    isVisible: boolean;\n    progress: number;\n}) => "
+            },
+            {
+              "kind": "Reference",
+              "text": "CSSProperties",
+              "canonicalReference": "@types/react!React.CSSProperties:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
             }
           ],
-          "fileUrlPath": "src/types/LoadingProgressIndicatorGetStyleFunction.ts",
+          "fileUrlPath": "dist/types/LoadingProgressIndicatorGetStyleFunction.d.ts",
           "releaseTag": "Public",
           "name": "LoadingProgressIndicatorGetStyleFunction",
-          "preserveMemberOrder": false,
-          "members": [
-            {
-              "kind": "CallSignature",
-              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorGetStyleFunction:call(1)",
-              "docComment": "",
-              "excerptTokens": [
-                {
-                  "kind": "Content",
-                  "text": "(attrs: "
-                },
-                {
-                  "kind": "Content",
-                  "text": "{\n        color: string;\n        direction: \"ltr\" | \"rtl\";\n        fadeAnimationDuration: number;\n        growAnimationDuration: number;\n        isVisible: boolean;\n        progress: number;\n    }"
-                },
-                {
-                  "kind": "Content",
-                  "text": "): "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "CSSProperties",
-                  "canonicalReference": "@types/react!React.CSSProperties:interface"
-                },
-                {
-                  "kind": "Content",
-                  "text": ";"
-                }
-              ],
-              "returnTypeTokenRange": {
-                "startIndex": 3,
-                "endIndex": 4
-              },
-              "releaseTag": "Public",
-              "overloadIndex": 1,
-              "parameters": [
-                {
-                  "parameterName": "attrs",
-                  "parameterTypeTokenRange": {
-                    "startIndex": 1,
-                    "endIndex": 2
-                  },
-                  "isOptional": false
-                }
-              ]
-            }
-          ],
-          "extendsTokenRanges": []
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 3
+          }
         },
         {
           "kind": "Interface",
@@ -281,7 +250,7 @@
               "text": "interface LoadingProgressIndicatorProps "
             }
           ],
-          "fileUrlPath": "src/types/LoadingProgressIndicatorProps.ts",
+          "fileUrlPath": "dist/types/LoadingProgressIndicatorProps.d.ts",
           "releaseTag": "Public",
           "name": "LoadingProgressIndicatorProps",
           "preserveMemberOrder": false,
@@ -379,7 +348,7 @@
                 {
                   "kind": "Reference",
                   "text": "LoadingProgressIndicatorGetStyleFunction",
-                  "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorGetStyleFunction:interface"
+                  "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorGetStyleFunction:type"
                 },
                 {
                   "kind": "Content",
@@ -460,7 +429,7 @@
                 },
                 {
                   "kind": "Content",
-                  "text": "string | number"
+                  "text": "number | string"
                 },
                 {
                   "kind": "Content",
