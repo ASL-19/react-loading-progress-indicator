@@ -1,11 +1,13 @@
+import type { FC } from "react";
+
 import { announce } from "@asl-19/js-dom-utils";
 // We need to import React directly to prevent API Extractor from failing with
 // “Error: The expression contains an import() type, which is not yet supported
 // by API Extractor:”
-import React, { FC, memo, useEffect, useRef, useState } from "react";
+import React, { memo, useEffect, useRef, useState } from "react";
 
-import LoadingProgressIndicatorProps from "../types/LoadingProgressIndicatorProps";
-import getDefaultStyle from "../utils/getDefaultStyle";
+import getDefaultStyle from "./getDefaultStyle.js";
+import LoadingProgressIndicatorProps from "./LoadingProgressIndicatorProps.js";
 
 const LoadingProgressIndicatorUnmemoized: FC<LoadingProgressIndicatorProps> = ({
   color,

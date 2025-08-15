@@ -1,5 +1,13 @@
-import LoadingProgressIndicatorGetStyleFunction from "../types/LoadingProgressIndicatorGetStyleFunction";
+import type LoadingProgressIndicatorGetStyleFunction from "./LoadingProgressIndicatorGetStyleFunction.js";
 
+/**
+ * Get default styles for loading progress indicator.
+ *
+ * @remarks Use this to augment the default styles in your own `getStyle`
+ * function.
+ *
+ * @public
+ */
 const getDefaultStyle: LoadingProgressIndicatorGetStyleFunction = ({
   color,
   direction,
