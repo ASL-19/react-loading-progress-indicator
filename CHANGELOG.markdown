@@ -1,5 +1,9 @@
 # @asl-19/react-loading-progress-indicator changelog
 
+## [1.0.0](https://github.com/ASL-19/react-loading-progress-indicator/pulls?q=is%3Apr+milestone%3A1.0.0+is%3Aclosed) [2025-08-15]
+
+- Migrate to ESM [[#23](https://github.com/ASL-19/react-loading-progress-indicator/pull/23)]
+
 ## 0.3.0 [2023-03-22]
 
 ### Changes
