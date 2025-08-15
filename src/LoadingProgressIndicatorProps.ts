@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/consistent-type-definitions */
-import LoadingProgressIndicatorGetStyleFunction from "./LoadingProgressIndicatorGetStyleFunction";
+
+import type LoadingProgressIndicatorGetStyleFunction from "./LoadingProgressIndicatorGetStyleFunction.js";
 
 /**
  * LoadingProgressIndicator props

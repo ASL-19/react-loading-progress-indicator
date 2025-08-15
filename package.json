@@ -1,6 +1,6 @@
 {
   "name": "@asl-19/react-loading-progress-indicator",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "React loading progress indicator component",
   "type": "module",
   "author": {
@@ -40,13 +40,13 @@
     "tsc-check": "tsc --project tsconfig-dist.json --noEmit"
   },
   "dependencies": {
-    "@asl-19/js-dom-utils": "^0.2.1"
+    "@asl-19/js-dom-utils": "^1.0.0"
   },
   "devDependencies": {
     "@asl-19/eslint-config": "^0.9.0",
     "@microsoft/api-documenter": "^7.26.31",
     "@microsoft/api-extractor": "^7.52.10",
-    "@types/node": "^24.2.1",
+    "@types/node": "^22.17.2",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "eslint": "^9.33.0",

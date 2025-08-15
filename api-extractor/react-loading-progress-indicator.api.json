@@ -174,6 +174,30 @@
       "members": [
         {
           "kind": "Variable",
+          "canonicalReference": "@asl-19/react-loading-progress-indicator!getDefaultStyle:var",
+          "docComment": "/**\n * Get default styles for loading progress indicator.\n *\n * @remarks\n *\n * Use this to augment the default styles in your own `getStyle` function.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "getDefaultStyle: "
+            },
+            {
+              "kind": "Reference",
+              "text": "LoadingProgressIndicatorGetStyleFunction",
+              "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicatorGetStyleFunction:type"
+            }
+          ],
+          "fileUrlPath": "dist/getDefaultStyle.d.ts",
+          "isReadonly": true,
+          "releaseTag": "Public",
+          "name": "getDefaultStyle",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
           "canonicalReference": "@asl-19/react-loading-progress-indicator!LoadingProgressIndicator:var",
           "docComment": "/**\n * Loading progress indicator (props: {@link LoadingProgressIndicatorProps})\n *\n * @param props - Props\n *\n * @public\n */\n",
           "excerptTokens": [
@@ -200,7 +224,7 @@
               "text": ">"
             }
           ],
-          "fileUrlPath": "dist/components/LoadingProgressIndicator.d.ts",
+          "fileUrlPath": "dist/LoadingProgressIndicator.d.ts",
           "isReadonly": true,
           "releaseTag": "Public",
           "name": "LoadingProgressIndicator",
@@ -232,7 +256,7 @@
               "text": ";"
             }
           ],
-          "fileUrlPath": "dist/types/LoadingProgressIndicatorGetStyleFunction.d.ts",
+          "fileUrlPath": "dist/LoadingProgressIndicatorGetStyleFunction.d.ts",
           "releaseTag": "Public",
           "name": "LoadingProgressIndicatorGetStyleFunction",
           "typeTokenRange": {
@@ -250,7 +274,7 @@
               "text": "interface LoadingProgressIndicatorProps "
             }
           ],
-          "fileUrlPath": "dist/types/LoadingProgressIndicatorProps.d.ts",
+          "fileUrlPath": "dist/LoadingProgressIndicatorProps.d.ts",
           "releaseTag": "Public",
           "name": "LoadingProgressIndicatorProps",
           "preserveMemberOrder": false,

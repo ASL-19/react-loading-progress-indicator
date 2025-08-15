@@ -47,6 +47,17 @@ Description
 </th></tr></thead>
 <tbody><tr><td>
 
+[getDefaultStyle](./react-loading-progress-indicator.getdefaultstyle.md)
+
+
+</td><td>
+
+Get default styles for loading progress indicator.
+
+
+</td></tr>
+<tr><td>
+
 [LoadingProgressIndicator](./react-loading-progress-indicator.loadingprogressindicator.md)
 
 
